@@ -69,36 +69,36 @@ def game_loop():
  
     while not game_over:
  
-        while close_game == True: #the game is still not over.
-            screen.fill(black) #filling the screen with black colour.
-            message("You Lost! Press C-Play Again or Q-Quit", blue)#prints "You Lost! Press C-Play Again or Q-Quit" message with blue ink.
-            game_score(snake_length - 1)#1 subtracted from the length is the new score now
-            pygame.display.update()#display is updated according to the score.
+        while close_game == True: #NY-the game is still not over.
+            screen.fill(black) #NY-filling the screen with black colour.
+            message("You Lost! Press C-Play Again or Q-Quit", blue)#NY-prints "You Lost! Press C-Play Again or Q-Quit" message with blue ink.
+            game_score(snake_length - 1)#NY-1 subtracted from the length is the new score now
+            pygame.display.update()#NY-display is updated according to the score.
  
-            for event in pygame.event.get(): #loop for the functions executed by pressing the listed keys by the user
-                if event.type == pygame.KEYDOWN: #if the user taps the down key
-                    if event.key == pygame.K_q: #and then tap q key
-                        game_over = True #game gets over
+            for event in pygame.event.get(): #NY-loop for the functions executed by pressing the listed keys by the user
+                if event.type == pygame.KEYDOWN: #NY-if the user taps the down key
+                    if event.key == pygame.K_q: #NY-then tap q key
+                        game_over = True #NY-game gets over
                         close_game = False
-                    if event.key == pygame.K_c: #if the user taps c key then the game keeps on playing
+                    if event.key == pygame.K_c: #NY-if the user taps c key then the game keeps on playing
                         game_loop()
  
-        for event in pygame.event.get(): #loop for the functions executed by pressing the listed keys by the user
-            if event.type == pygame.QUIT: #if the user taps QUIT then the game is over
+        for event in pygame.event.get(): #NY-loop for the functions executed by pressing the listed keys by the user
+            if event.type == pygame.QUIT: #NY-if the user taps QUIT then the game is over
                 game_over = True
-            if event.type == pygame.KEYDOWN: #if down key is pressed
-                if event.key == pygame.K_LEFT: #the user taps on LEFT
-                    x1_movement = -snake_block #the snake moves towards left (a negative sign is used as the snake goes in the negative(left) direction)
-                    y1_movement = 0 #variable y1 is 0 as the snake doesn't move vertically
-                elif event.key == pygame.K_RIGHT: #the user taps on RIGHT
-                    x1_movement = snake_block #the snake moves towards right
-                    y1_movement = 0 #variable y1 is 0 as the snake doesn't move vertically
-                elif event.key == pygame.K_UP: #the user taps on UP
-                    y1_movement = -snake_block #the snake moves upwards (a negative sign is used as the snake goes in the negative(up) direction)
-                    x1_movement = 0 #variable x1 is 0 as the snake doesn't move horizontally
-                elif event.key == pygame.K_DOWN: #the user taps on DOWN
-                    y1_movement = snake_block #the snake moves downwards
-                    x1_movement = 0 #variable x1 is 0 as the snake doesn't move horizontally
+            if event.type == pygame.KEYDOWN: #NY-if down key is pressed
+                if event.key == pygame.K_LEFT: #NY-the user taps on LEFT
+                    x1_movement = -snake_block #NY-the snake moves towards left (a negative sign is used as the snake goes in the negative(left) direction)
+                    y1_movement = 0 #NY-variable y1 is 0 as the snake doesn't move vertically
+                elif event.key == pygame.K_RIGHT: #NY-the user taps on RIGHT
+                    x1_movement = snake_block #NY-the snake moves towards right
+                    y1_movement = 0 #NY-variable y1 is 0 as the snake doesn't move vertically
+                elif event.key == pygame.K_UP: #NY-the user taps on UP
+                    y1_movement = -snake_block #NY-the snake moves upwards (a negative sign is used as the snake goes in the negative(up) direction)
+                    x1_movement = 0 #NY-variable x1 is 0 as the snake doesn't move horizontally
+                elif event.key == pygame.K_DOWN: #NY-the user taps on DOWN
+                    y1_movement = snake_block #NY-the snake moves downwards
+                    x1_movement = 0 #NY-variable x1 is 0 as the snake doesn't move horizontally
  
         if x1 >= screen_width or x1 < 0 or y1 >= screen_height or y1 < 0:
             close_game = True
