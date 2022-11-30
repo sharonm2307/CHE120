@@ -42,7 +42,7 @@ def game_score(score): #function for the user the score of what they are at-BL
  
  
 def snake_growth(snake_block, snake_list): #function for the snake to grow each time it eats the apple-BL
-    for x in snake_list: #for each block in the snake's body
+    for x in snake_list: #for each block in the snake's body-BL
         pygame.draw.rect(screen, white, [x[0], x[1], snake_block, snake_block]) #pygame.draw.rect creates a rectangle on the screen in a white colour at the end of the previous block-BL
  
  
@@ -53,7 +53,7 @@ def message(text, color): #function for let the user know when they lose-BL
  
 def game_loop(): #function for the game to continue or stop under certain conditions-BL
     game_over = False #these are variables for when the game is running-BL
-    close_game = False #conditions for when the game is running
+    close_game = False #conditions for when the game is running-BL
  
     x1 = screen_width / 2 #this is where the snake will start in terms of the horizontal direction-BL
     y1 = screen_height / 2 #this is the same but in the vertical direction-BL
