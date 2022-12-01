@@ -7,13 +7,17 @@ Created on Tue Nov 22 12:16:39 2022
 """
 # SM - Sharon Moorthy
 # NY - Nitya 
+# WA - Wardah Anwer
 
+# WA -  importing libraries
 import pygame
 import time
 import random
  
+# WA - initialising pygame
 pygame.init()
- 
+
+# WA - defining colors
 white = (255, 255, 255)
 yellow = (255, 255, 102)
 black = (0, 0, 0)
@@ -21,17 +25,22 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
  
+# WA - screen size
 screen_width = 600
 screen_height = 400
- 
+
+# WA - # Initialising game window
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Snake Game')
- 
+
+# WA - # FPS (frames per second) controller
 clock = pygame.time.Clock()
- 
+
+#WA - frames of speed and movement
 snake_block = 10
 snake_speed = 10
  
+# WA - creating font objects
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
  
