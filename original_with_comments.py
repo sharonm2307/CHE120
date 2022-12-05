@@ -29,18 +29,18 @@ green = (0, 255, 0)
 blue = (50, 153, 213)
 
 # WA - screen size 
-screen_width = 600 #WA - width dimension 
-screen_height = 400 #WA - height dimension
+screen_width = 600 # WA - width dimension 
+screen_height = 400 # WA - height dimension
 
 # WA - initialising game window using the variables
 screen = pygame.display.set_mode((screen_width, screen_height))
-#WA - when the screen appears, it will be automatically labelled by 'Snake Game'
+# WA - when the screen appears, it will be automatically labelled by 'Snake Game'
 pygame.display.set_caption('Snake Game') 
 
-# WA - # FPS (frames per second) controller 
+# WA - FPS (frames per second) controller 
 clock = pygame.time.Clock() #WA - it initially creates an object to track time and is represented in milliseconds
 
-#WA - frames of speed and movement; FPS can assist in controlling how fast or slow the "animation" must move 
+# WA - frames of speed and movement; FPS can assist in controlling how fast or slow the "animation" must move 
 snake_block = 10
 snake_speed = 15
 
