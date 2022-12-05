@@ -16,7 +16,7 @@ import pygame #WA - allows to import all the available pygame modules necessary 
 import time #WA -  this module represents time in code within objects, numbers, and strings; provides functionality
 import random #WA -  manipulates and generates random integers
 
-pygame.init() # WA - initializes all imported pygame modules
+pygame.init() # WA - initializing all imported pygame modules
 
 # WA - defining colors 
 # WA - each line of code, known has RGB (red, green, and blue) can be combined in various proportions to obtain any color in the visible spectrum
