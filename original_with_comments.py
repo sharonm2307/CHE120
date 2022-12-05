@@ -12,14 +12,15 @@ Created on Sat Dec  3 15:31:15 2022
 
 
 # WA -  importing libraries
-import pygame
-import time
-import random
+import pygame #WA - allows to import all the available pygame modules necessary into the package
+import time #WA -  this module represents time in code within objects, numbers, and strings; provides functionality
+import random #WA -  manipulates and generates random integers
 
-# WA - initialising pygame 
-pygame.init()
+pygame.init() # WA - initializes all imported pygame modules
 
 # WA - defining colors 
+# WA - each line of code, known has RGB (red, green, and blue) can be combined in various proportions to obtain any color in the visible spectrum
+# WA - it additionally describes a colour as a tuple within the range of 0 and 255 that can be used on computer display
 white = (255, 255, 255)
 yellow = (255, 255, 102)
 black = (0, 0, 0)
@@ -27,22 +28,23 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
 
-# WA - screen size 
+# WA - screen size dimensions
 screen_width = 600
 screen_height = 400
 
-# WA - # Initialising game window 
+# WA - initialising game window using the variables
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption('Snake Game')
+#WA - when the screen appears, it will be automatically labelled by 'Snake Game'
+pygame.display.set_caption('Snake Game') 
 
 # WA - # FPS (frames per second) controller 
-clock = pygame.time.Clock()
+clock = pygame.time.Clock() #WA - it initially creates an object to track time and is represented in milliseconds
 
-#WA - frames of speed and movement 
+#WA - frames of speed and movement; FPS can assist in controlling how fast or slow the "animation" must move 
 snake_block = 10
 snake_speed = 15
 
-# WA - creating font objects 
+# WA - creating font objects by stating the font style and size
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
  
