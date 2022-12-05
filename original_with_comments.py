@@ -28,9 +28,9 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
 
-# WA - screen size dimensions
-screen_width = 600
-screen_height = 400
+# WA - screen size 
+screen_width = 600 #WA - width dimension 
+screen_height = 400 #WA - height dimension
 
 # WA - initialising game window using the variables
 screen = pygame.display.set_mode((screen_width, screen_height))
