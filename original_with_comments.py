@@ -13,8 +13,8 @@ Created on Sat Dec  3 15:31:15 2022
 
 # WA -  importing libraries
 import pygame #WA - allows to import all the available pygame modules necessary into the package
-import time #WA -  this module represents time in code within objects, numbers, and strings; provides functionality
-import random #WA -  manipulates and generates random integers
+import time #WA - this module represents time in code within objects, numbers, and strings; provides functionality
+import random #WA - manipulates and generates random integers
 
 pygame.init() # WA - initializing all imported pygame modules
 
